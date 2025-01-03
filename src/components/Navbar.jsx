@@ -1,32 +1,22 @@
 import React from 'react';
 import { HashLink as Link} from 'react-router-hash-link';
+import '../style.css'
 
-export default function Navbar()
-{
-    return <>
-        <nav>
-            <ul>
-                <li>
-                    <Link to="#about" className="link">
-                        About
-                    </Link>
-                </li>
-                <li>
-                    <Link to="#education" className="link">
-                        Education
-                    </Link>
-                </li>
-                {/* <li>
-                    <Link to="#projects" className="link">
-                        Projects
-                    </Link>
-                </li> */}
-                {/* <li>
-                    <Link to="#misc" className="link">
-                        Miscellaneous
-                    </Link>
-                </li> */}
-            </ul>
+const Navbar = ({ setActive }) => {
+    return (
+
+        <nav className="navbar">
+            <div className="navbar-center">
+                <ul className="nav-links">
+                <li onClick={() => setActive('About')}>Kim Hoang</li>
+                <li onClick={() => setActive('Education')}>Education</li>
+                <li onClick={() => setActive('Work')}>Work</li>
+                <li onClick={() => setActive('Portfolio')}>Portfolio</li>
+                <li onClick={() => setActive('Quests')}>Side Quests</li>
+                </ul>
+            </div>
         </nav>
-    </>
-}
+    );
+};
+
+export default Navbar
