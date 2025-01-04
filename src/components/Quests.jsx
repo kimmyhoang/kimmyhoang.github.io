@@ -11,7 +11,7 @@ export default function Quests()
         <p>Honoured to have been president with an amazing team to bring data science to as many students as possible, both the academic and industry perspectives.</p>
         <h3>Actor - EngPlay</h3>
         <p>Comedy theatre productions written, directed, and performed by engineering students. I have acted in 5 so far.</p>
-        <p><i>Side quest within a side quest:</i> I also like to design the advertising. Check out some of my designs <u>here</u></p>
+        {/* <p><i>Side quest within a side quest:</i> I also like to design the advertising. Check out some of my designs <u>here</u></p> */}
         <h3>Amateur - Films</h3>
         <p>A DaVinci Resolve and Adobe Premiere Pro enjoyer. I love preserving memories. Just for friends and family.</p>
         <h2>Other Unlocked Territories</h2>
