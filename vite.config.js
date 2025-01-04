@@ -4,7 +4,7 @@ import restart from 'vite-plugin-restart'
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-    root: 'docs',
+    root: 'src',
     publicDir: '../public/',
     plugins:
     [
@@ -34,13 +34,25 @@ export default defineConfig({
     },
     build:
     {
-        outDir: 'docs', 
-        emptyOutDir: false, 
+        outDir: '../docs', 
+        emptyOutDir: true, 
         sourcemap: true // Add sourcemap
     },
     base: '/',
     resolve: {
         extensions: ['.js', '.jsx']
-    }
+    },
+    esbuild: {
+        loader: 'jsx', 
+        include: /src\/.*\.jsx?$/,  
+        exclude: [],
+    },
+    optimizeDeps: {
+        esbuildOptions: {
+            loader: {
+                '.js': 'jsx',  
+            },
+        },
+    },
 }
 )
