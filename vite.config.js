@@ -3,8 +3,8 @@ import { transformWithEsbuild } from 'vite'
 import restart from 'vite-plugin-restart'
 import { defineConfig } from 'vite'
 
-export default {
-    root: 'docs/',
+export default defineConfig({
+    root: 'docs',
     publicDir: '../public/',
     plugins:
     [
@@ -41,4 +41,8 @@ export default {
         sourcemap: true // Add sourcemap
     },
     base: '/',
+    resolve: {
+        extensions: ['.js', '.jsx']
+    }
 }
+)
