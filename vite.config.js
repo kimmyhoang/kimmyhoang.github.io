@@ -1,6 +1,7 @@
 import react from '@vitejs/plugin-react'
 import { transformWithEsbuild } from 'vite'
 import restart from 'vite-plugin-restart'
+import { defineConfig } from 'vite'
 
 export default {
     root: 'docs/',
@@ -39,4 +40,5 @@ export default {
         emptyOutDir: true, // Empty the folder first
         sourcemap: true // Add sourcemap
     },
+    base: './',
 }
