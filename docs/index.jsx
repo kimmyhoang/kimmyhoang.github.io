@@ -54,7 +54,7 @@ const App = () => {
 
       return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename={import.meta.env.BASE_URL}>
                 <Navbar setActive={setActive}/>
                 <div className="container">
                     {renderSection()}
