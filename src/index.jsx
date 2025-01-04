@@ -18,7 +18,27 @@ const App = () => {
     const renderSection = () => {
         switch (active) {
           case 'About':
-            return <About />;
+            return (
+              <>
+              <About />
+              <Canvas
+              camera={{
+                  fov: 45,
+                  near: 0.1,
+                  far: 1000,
+                  position: [0, 0, 5]
+              }}
+              style={{
+                  position: 'fixed',
+                  top: 0,
+                  left: 0,
+                  zIndex: -1,
+              }}
+          >
+              <Experience />
+          </Canvas>
+          </>
+          );
           case 'Education':
             return <Education />;
           case 'Work':
@@ -36,13 +56,9 @@ const App = () => {
         <>
             <BrowserRouter>
                 <Navbar setActive={setActive}/>
-                <div class="container">
+                <div className="container">
                     {renderSection()}
                 </div>
-                
-                {/* <Canvas>
-                    <Experience />
-                </Canvas> */}
             </BrowserRouter>
     
         </>

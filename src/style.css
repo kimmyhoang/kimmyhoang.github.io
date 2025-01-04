@@ -13,12 +13,9 @@ body,
 html {
     font-family: Candara;
     color: #314970;
-    /* font-size: 20px;
-    color: #FF7A59; */
   }
 
 a {
-    /* display: inline-block; */
     padding-right: 1rem;
     color: #314970;
 }
@@ -35,9 +32,16 @@ body {
 }
 
 .container {
-    max-width: 50%; /* Restricts the width to the middle two quarters (50%) */
-    margin: 0 auto; /* Centers the content horizontally */
+    max-width: 50%; 
+    margin: 0 auto; 
   }
+
+.contact {
+    padding-bottom: 0;
+    
+    justify-content: center;
+    align-items: center;
+}
 
 .navbar {
     display: flex;
@@ -104,4 +108,43 @@ body {
     .navbar-center .nav-links li:last-child {
         margin-bottom: 0;
     }
+
+    
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    height: 85vh; 
+    margin-top: -2rem
+}
+
+#about p {
+    margin-top: 0;
+    text-align: center;
+}
+
+.contact {
+    margin-top: auto; 
+    text-align: center;
+}
+
+.contact a {
+    display: inline-block;
+    margin: 0 10px; 
+    text-decoration: none; 
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+
+canvas {
+    position: fixed !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: 2rem;
+    z-index: -1;
+    background-color: transparent;
 }
