@@ -8,18 +8,16 @@ export default defineConfig({
     publicDir: '../public/',
     plugins:
     [
+        react(),
         // Restart server on static/public file change
         restart({ restart: [ '../public/**', ] }),
-
-        // React support
-        react(),
 
         // .js file support as if it was JSX
         {
             name: 'load+transform-js-files-as-jsx',
             async transform(code, id)
             {
-                if (!id.match(/docs\/.*\.js$/))
+                if (!id.match(/\.(jsx?|tsx?)$/))
                     return null
 
                 return transformWithEsbuild(code, id, {
@@ -36,8 +34,8 @@ export default defineConfig({
     },
     build:
     {
-        outDir: '../dist', // Output in the dist/ folder
-        emptyOutDir: true, // Empty the folder first
+        outDir: 'docs', 
+        emptyOutDir: false, 
         sourcemap: true // Add sourcemap
     },
     base: '/',
