@@ -40,5 +40,5 @@ export default {
         emptyOutDir: true, // Empty the folder first
         sourcemap: true // Add sourcemap
     },
-    base: './',
+    base: '/',
 }
