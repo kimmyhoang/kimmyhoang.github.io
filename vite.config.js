@@ -3,7 +3,7 @@ import { transformWithEsbuild } from 'vite'
 import restart from 'vite-plugin-restart'
 
 export default {
-    root: 'src/',
+    root: 'docs/',
     publicDir: '../public/',
     plugins:
     [
@@ -18,7 +18,7 @@ export default {
             name: 'load+transform-js-files-as-jsx',
             async transform(code, id)
             {
-                if (!id.match(/src\/.*\.js$/))
+                if (!id.match(/docs\/.*\.js$/))
                     return null
 
                 return transformWithEsbuild(code, id, {
