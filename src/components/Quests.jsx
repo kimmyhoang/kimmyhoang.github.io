@@ -11,9 +11,12 @@ export default function Quests()
             industry perspectives. One of the largest student clubs on campus, check it out at <a href="https://uwdatascience.ca" target="_blank">uwdatascience.ca</a></p>
         <h3>Actor - EngPlay</h3>
         <p>Comedy theatre productions written, directed, and performed by engineering students. I have acted in 5 so far.</p>
-        {/* <p><i>Mini side quest:</i> I like to design the posters. Check out some past posters <u>here</u></p> */}
-        <h3>Amateur - Films</h3>
-        <p>DaVinci Resolve and Adobe Premiere Pro enjoyer. I love preserving memories. Just for friends and family.</p>
+        <p><i>Mini side quest:</i> I like to draw the posters sometimes. Left poster, engineering students build a time travelling car 
+        that drives between dimensions. Right poster, a Tangled and How to Train Your Dragon crossover, featuring a bear-goose.</p>
+        <div className="project-images">
+            <img className="project-link" alt="EngPlay Poster" src="../images/poster1.png" width="25%"/>
+            <img className="project-link" alt="EngPlay Poster" src="../images/poster2.png" width="25%"/>
+        </div>
         <h2>Other Unlocked Territories</h2>
         <p>Some other communities I've been a part of include Socratica, Tech+, Blueprint, Engineering Ambassadors, Hack the 6ix.</p>
         <p>All center around tech, community, and social good.</p>
