@@ -131,6 +131,16 @@ canvas {
     background-color: transparent;
 }
 
+.project {
+    display: flex;
+    margin-bottom: -1.2rem;
+}
+.project-link {
+    margin-left: 10px; 
+    margin-top: 1.4rem;
+    justify-content: center;
+}
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column; 

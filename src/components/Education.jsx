@@ -26,8 +26,8 @@ export default function Education()
             
             <blockquote>| Why did you switch your major?</blockquote>
             <p>
-                I was in <a href="https://uwaterloo.ca/future-students/programs/management-engineering">management engineering</a> before switching 
-                to <a href="https://uwaterloo.ca/future-students/programs/mechatronics-engineering">mechatronics engineering</a>. 
+                I was in <a href="https://uwaterloo.ca/future-students/programs/management-engineering" target="_blank">management engineering</a> before switching 
+                to <a href="https://uwaterloo.ca/future-students/programs/mechatronics-engineering" target="_blank">mechatronics engineering</a>. 
                 In short, mechatronics is cooler to me.
             </p>
             <p>
