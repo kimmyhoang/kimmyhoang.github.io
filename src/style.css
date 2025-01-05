@@ -168,11 +168,10 @@ canvas {
 
     #about {
         height: calc(100vh - 17rem);
-        gap: 18rem;
     }
 
-    #about p {
-        margin-top: 11rem; 
+    .quote {
+        margin-top: 5rem
     }
 
     .non-mobile-break {
