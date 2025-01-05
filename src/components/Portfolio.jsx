@@ -7,7 +7,7 @@ export default function Portfolio()
 
         <h3>Waterloo Rocketry - Rocket Canards</h3>
         <p>
-            Helping code the real time operating system to control canards that reduce rocket roll rate. 
+            Helping code the real time operating system to control canards that reduce rocket roll rate with FreeRTOS in C. 
         </p>
         <p>
             Learning about active control systems with cool people at Waterloo Rocketry.
@@ -29,10 +29,10 @@ export default function Portfolio()
         </p>
         <h3>Mental Note - Image Sentiment Journal</h3>
         <p>
-            Developing a sentiment journal that used sentiment analysis and neural style transfer to create images based on user emotions.
+            Developing a sentiment journal that used sentiment analysis and neural style transfer to create images based on emotions detected in journal entries.
         </p>
         <p>
-            Awarded at the University of Toronto's Hack the MIST hackathon.
+            Won the University of Toronto's Hack the MIST hackathon.
         </p>
     </section>
         
