@@ -3,7 +3,7 @@ export default function Quests()
     return <>
     <section id="quests">
         <h1>Side Quests</h1>
-        <blockquote>| FInding and forming communities.</blockquote>
+        <blockquote>| Finding and forming communities.</blockquote>
         <h3>Parody Musical</h3>
         <p>Currently writing, editing, and scheming a parody musical with friends, coming soon...</p>
         <h3>President - Data Science Club</h3>
