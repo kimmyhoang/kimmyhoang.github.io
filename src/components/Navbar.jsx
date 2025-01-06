@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashLink as Link} from 'react-router-hash-link';
+import ThemeToggle from './ThemeToggle';
 import '../style.css'
 
 const Navbar = ({ setActive }) => {

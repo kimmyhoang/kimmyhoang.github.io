@@ -14,8 +14,7 @@ export default function Experience()
     })
 
     return <>
-        <color attach="background" args={['#fafdfe']} />
-        
+     
         <group position={[0, 0, 2]}>
             <primitive 
                 ref={moonRef}
