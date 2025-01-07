@@ -72,12 +72,11 @@ pre { font-family: Candara, Optima, Arial; font-size: 0.8rem; font-style: normal
 .navbar-center .nav-links li {
     margin-right: calc(100vw*0.1);
     font-family: Candara; 
-    font-size: 1.5rem; 
+    font-size: 1.4rem; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
     line-height: 23px; 
-
 }
 
 .navbar-center .nav-links li:last-child {
@@ -89,36 +88,20 @@ pre { font-family: Candara, Optima, Arial; font-size: 0.8rem; font-style: normal
 }
 
 #about {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: calc(100vh - 9rem);
-    margin-top: -2rem;
-    overflow: hidden;
+    height: 100%
 }
-
-#about p {
-    margin-top: 0;
+.quote {
+    margin-top: 5%;
     text-align: center;
 }
 
 .contact {
-    margin-bottom: 0; 
-    padding-bottom: 0;
-    text-align: center;
-}
-
-.contact a {
-    display: inline-block;
-    margin: 0 10px; 
-    text-decoration: none; 
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-
+    position: fixed;
+    left: 50%;
+    bottom: 1rem;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+  }
 
 canvas {
     position: fixed !important;
@@ -162,12 +145,9 @@ canvas {
         margin-bottom: 0;
     }
 
-    #about {
-        height: calc(100vh - 17rem);
-    }
-
     .quote {
-        margin-top: 5rem
+        margin-top: 70%;
+        justify-content: center;
     }
 
     .non-mobile-break {

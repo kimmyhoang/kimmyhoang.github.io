@@ -10,9 +10,15 @@ export default function About()
             </p>
             </div>
             <div className="contact">
-                <a href="https://www.github.com/kimmyhoang" target="_blank">Github</a>
-                <a href="https://www.linkedin.com/in/kimmyhoang" target="_blank">Linkedin</a>
-                <a href="mailto:k32hoang@uwaterloo.ca" target="_blank">Email </a>
+                <a href="https://github.com/kimmyhoang" target="_blank">
+                    <img className="project-link" alt="Github Link" src="../images/github_icon.svg" width="17" height="17"/>
+                </a>
+                <a href="https://www.linkedin.com/in/kimmyhoang" target="_blank">
+                    <img className="project-link" alt="Github Link" src="../images/linkedin.svg" width="17" height="17"/>
+                </a>
+                <a href="mailto:k32hoang@uwaterloo.ca" target="_blank">
+                    <img className="project-link" alt="Github Link" src="../images/mail.png" width="17" height="17"/>
+                </a>
             </div>
             
         </section>
