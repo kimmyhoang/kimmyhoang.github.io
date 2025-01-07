@@ -20,6 +20,8 @@ body {
 }
 
 a {
+    margin: 0;
+    padding: 0;
     padding-right: 1rem;
 }
 
@@ -29,10 +31,6 @@ p { font-family: Candara, Arial; font-size: 1rem !important; font-style: normal;
 blockquote { font-family: Candara, Optima, Arial; font-size: 1.2rem; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } 
 pre { font-family: Candara, Optima, Arial; font-size: 0.8rem; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; }
 
-a {
-    margin: 0;
-    padding: 0;
-  }
 
 .container {
     max-width: 50%; 
@@ -50,10 +48,6 @@ a {
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    flex-wrap: wrap; 
-    width: 100%; 
-    box-sizing: border-box; 
-    padding-bottom: 7rem;
 }
 
 .navbar li {
@@ -62,10 +56,8 @@ a {
 
 .navbar-center {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap; 
-    width: 100%; 
+    align-items: center;
 }
 
 .nav-links {
@@ -73,15 +65,19 @@ a {
     display: flex;
     justify-content: center; 
     align-items: center;
-    flex-wrap: wrap; 
     margin: 0;
     padding: 0;
-    width: 100%; 
 }
   
 .navbar-center .nav-links li {
-    margin-right: 15rem;
-    font-family: Candara; font-size: 1.5rem; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; } p { font-family: Candara; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } blockquote { font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } pre { font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif; font-size: 11px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; 
+    margin-right: calc(100vw*0.1);
+    font-family: Candara; 
+    font-size: 1.5rem; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 23px; 
+
 }
 
 .navbar-center .nav-links li:last-child {
@@ -155,7 +151,6 @@ canvas {
 
     .nav-links {
         flex-direction: column; 
-        align-items: right; 
     }
 
     .navbar-center .nav-links li {
