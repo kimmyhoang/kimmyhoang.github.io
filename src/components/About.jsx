@@ -14,6 +14,7 @@ export default function About()
                 <a href="https://www.linkedin.com/in/kimmyhoang" target="_blank">Linkedin</a>
                 <a href="mailto:k32hoang@uwaterloo.ca" target="_blank">Email </a>
             </div>
+            
         </section>
         
     </>
