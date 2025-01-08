@@ -19,7 +19,7 @@ export default function Experience()
             <primitive 
                 ref={moonRef}
                 object={moon.scene}
-                scale={0.75}
+                scale={0.60}
                 position={[0, 0, 0]}
             />
         </group>
