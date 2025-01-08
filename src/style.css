@@ -129,6 +129,14 @@ canvas {
     justify-content: center;
 }
 
+#quests a {
+    text-decoration: none;
+}
+
+#quests a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column; 

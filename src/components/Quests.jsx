@@ -6,19 +6,30 @@ export default function Quests()
         <blockquote>| Finding and forming communities.</blockquote>
         <h3>Parody Musical</h3>
         <p>Currently writing, editing, and scheming a parody musical with friends, coming soon...</p>
-        <h3>President - Data Science Club</h3>
+        <div className="project">
+            <h3>Maker - Socratica <a href="https://www.socratica.info/" target="_blank">⁂</a></h3>
+            
+        </div>
+        <p>An open collective of makers, artists, engineers, designers, writers, poets, and everything in-between.</p>
+        <div className="project">
+            <h3>President - Data Science Club</h3>
+            <a href="https://uwdatascience.ca" target="_blank">
+                    <img className="project-link" alt="Data Science Club Link" src="../images/dsc.png" width="17" height="17"/>
+            </a>
+        </div>
+        
         <p>President with an amazing team working to bring data science to as many students as possible, both the academic and 
-            industry perspectives. One of the largest student clubs on campus, check it out at <a href="https://uwdatascience.ca" target="_blank">uwdatascience.ca</a></p>
+            industry perspectives. One of the largest student clubs on campus.</p>
+
         <h3>Actor - EngPlay</h3>
         <p>Comedy theatre productions written, directed, and performed by engineering students. I have acted in 5 so far.</p>
-        <p><i>Mini side quest:</i> I like to draw the posters sometimes. Left poster, engineering students build a time travelling car 
-        that drives between dimensions. Right poster, a Tangled and How to Train Your Dragon crossover, featuring a bear-goose.</p>
-        <div className="project-images">
-            <img className="project-link" alt="EngPlay Poster" src="../images/poster1.png" width="25%"/>
-            <img className="project-link" alt="EngPlay Poster" src="../images/poster2.png" width="25%"/>
-        </div>
         <h2>Other Unlocked Territories</h2>
-        <p>Some other communities I've been a part of include Socratica, Tech+, Blueprint, Engineering Ambassadors, Hack the 6ix.</p>
+        <p>Some other communities I've been a part of include 
+            <a href="https://www.techplusuw.com/" target="_blank"> Tech+</a>, 
+            <a href="https://uwblueprint.org/" target="_blank"> Blueprint</a>, 
+            <a href="https://hackthe6ix.com/" target="_blank"> Hack the 6ix</a>, and 
+            <a href="https://uwaterloo.ca/engineering/undergraduate-students/student-life/become-eng-ambassador" target="_blank"> Engineering Ambassadors</a>.
+        </p>
         <p>All center around tech, community, and social good.</p>
     </section>
     </>
