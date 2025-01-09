@@ -14,14 +14,14 @@ export default function Education()
 				Switching Majors
             </h3>
             <p>
-            Switched to mechatronics from another program. From studying economics to thermodynamics, 2 questions I get asked:
+            I switched to mechatronics from another program. From studying economics to thermodynamics, 2 questions I get asked:
             </p>
 
             <blockquote>| I'm thinking of switching my major, advice?</blockquote>
             <p> 
                 Having met many transfer students now, everyone has different reasons for their switch. Feel free 
-                to <a href="mailto:k32hoang@uwaterloo.ca">contact</a> me, would love to help. Knowing what is pushing you out of your current program 
-                and what is pulling you towards another program is useful.
+                to <a href="mailto:k32hoang@uwaterloo.ca">email</a> me, would love to help. Knowing what is pushing you out of your current program 
+                and what is pulling you towards another program is a useful starting point.
             </p>
             
             <blockquote>| Why did you switch your major?</blockquote>
@@ -32,7 +32,7 @@ export default function Education()
             </p>
             <p>
                 The longer story, I had no exposure to robotics or much STEM at all in high school, coming from a small town. I struggled through 1st year 
-                and was below class average, but worked hard and had the top grade average by 2nd year. Loved management engineering, but I decided to 
+                and was below class average, but worked hard and had the top grade average by 2nd year. I loved management engineering, but I decided to 
                 take a course from mechatronics and learned there was so much cool stuff I didn't know existed. A huge thanks 
                 to the mechatronics engineering director and advisors for helping me make the leap.
             </p>
