@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import About from './About.jsx'
 import { Canvas } from '@react-three/fiber';
 import Animation from './Animation.jsx';
-import './Loader.css'; 
 
 export default function Loader() {
     const [showImg, setShowImg] = useState(true);
@@ -31,9 +30,7 @@ export default function Loader() {
                         <>
                         <About />
                         <div
-                            className={`canvas-wrapper ${
-                                animationTriggered ? 'fade-in' : ''
-                            }`}
+                            className={`canvas-wrapper`}
                         >
                         <Canvas
                         camera={{
