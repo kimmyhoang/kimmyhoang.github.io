@@ -19,10 +19,15 @@ export default function Quests()
         </div>
         
         <p>President with an amazing team working to bring data science to as many students as possible, both the academic and 
-            industry perspectives. One of the largest student clubs on campus.</p>
+            industry perspectives. One of the largest student clubs at the University of Waterloo.</p>
 
         <h3>Actor - EngPlay</h3>
         <p>Comedy theatre productions written, directed, and performed by engineering students. I have acted in 5 so far.</p>
+
+
+        <h3>Actor - National Theatre School Drama Festival</h3>
+        <p>One act plays directed, stage managed, and performed by students. Where I first learned to love the art of live performance.</p>
+
         <h2>Other Unlocked Territories</h2>
         <p>Some other communities I've been a part of include 
             <a href="https://www.techplusuw.com/" target="_blank"> Tech+</a>, 

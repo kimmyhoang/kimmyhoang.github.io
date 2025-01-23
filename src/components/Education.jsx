@@ -28,7 +28,7 @@ export default function Education()
             <p>
                 I was in <a href="https://uwaterloo.ca/future-students/programs/management-engineering" target="_blank">management engineering</a> before switching 
                 to <a href="https://uwaterloo.ca/future-students/programs/mechatronics-engineering" target="_blank">mechatronics engineering</a>. 
-                In short, mechatronics is cooler to me.
+                In short, mechatronics is more fun to me.
             </p>
             <p>
                 The longer story, I had no exposure to robotics or much STEM at all in high school, coming from a small town. I struggled through 1st year 

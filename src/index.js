@@ -8,8 +8,9 @@ import Portfolio from './components/Portfolio.jsx'
 import Quests from './components/Quests.jsx';
 import Navbar from './components/Navbar.jsx';
 import { BrowserRouter } from 'react-router-dom';
-import { Canvas } from '@react-three/fiber'
-import Experience from './components/Animation.jsx'
+import { Canvas } from '@react-three/fiber';
+import Animation from './components/Animation.jsx';
+import Loader from './components/Loader.jsx';
 
 const App = () => {
 
@@ -20,7 +21,8 @@ const App = () => {
           case 'About':
             return (
               <>
-              <About />
+              <Loader />
+              {/* <About />
               <Canvas
               camera={{
                   fov: 45,
@@ -34,9 +36,9 @@ const App = () => {
                   left: 0,
                   zIndex: -1,
               }}
-          >
-              <Experience />
-          </Canvas>
+              >
+              <Animation />
+              </Canvas> */}
           </>
           );
           case 'Education':

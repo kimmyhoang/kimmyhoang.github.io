@@ -2,7 +2,7 @@ import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import { useRef } from 'react'
 
-export default function Experience()
+export default function Animation()
 {
     const moonRef = useRef()
     const moon = useGLTF('/models/moon.glb')
@@ -14,7 +14,6 @@ export default function Experience()
     })
 
     return <>
-     
         <group position={[0, 0, 2]}>
             <primitive 
                 ref={moonRef}
