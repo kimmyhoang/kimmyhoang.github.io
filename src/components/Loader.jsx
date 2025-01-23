@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import About from './About.jsx'
 import { Canvas } from '@react-three/fiber';
 import Animation from './Animation.jsx';
@@ -6,12 +6,19 @@ import Animation from './Animation.jsx';
 export default function Loader() {
     const [showImg, setShowImg] = useState(true);
     const [animationTriggered, setAnimationTriggered] = useState(false);
-    
+
     useEffect(() => {
-        setTimeout(() => {
-            setShowImg(false)
-            setAnimationTriggered(true);
-        }, 3000)
+        
+        const visitedBefore = localStorage.getItem('visitedBefore');
+        if (visitedBefore) {
+            setShowImg(false); 
+        } else {
+            setTimeout(() => {
+                setShowImg(false);
+                setAnimationTriggered(true);
+                localStorage.setItem('visitedBefore', 'true'); 
+            }, 3000);
+        }
     },[])
 
     return(

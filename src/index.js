@@ -17,6 +17,7 @@ const App = () => {
     const [active, setActive] = useState('About');
 
     const renderSection = () => {
+     
         switch (active) {
           case 'About':
             return (
