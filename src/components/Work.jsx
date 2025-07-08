@@ -3,7 +3,11 @@ export default function Work()
     return <>
         <section id="work">
             <h1>Work</h1>
-            <blockquote>| Currently seeking Summer 2025 internships - feel free to <a href="mailto:k32hoang@uwaterloo.ca">contact</a> me for my full resume.</blockquote>
+            <blockquote>| Currently seeking Summer 2026 internships - feel free to <a href="mailto:k32hoang@uwaterloo.ca">contact</a> me for my full resume.</blockquote>
+            <h3>Data Science Intern - Square</h3>
+            <p>
+                Currently on the Growth Strategy & Product Foundations Data Science team.
+            </p>
             <h3>Data Scientist Intern - Scotiabank</h3>
             <p>
                 Analyzed digital channel performance and visualized application funnels to create recommendations for gamers.
