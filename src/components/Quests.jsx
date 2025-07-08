@@ -4,13 +4,6 @@ export default function Quests()
     <section id="quests">
         <h1>Side Quests</h1>
         <blockquote>| Finding and forming communities.</blockquote>
-        <h3>Parody Musical</h3>
-        <p>Currently writing, editing, and scheming a parody musical with friends, coming soon...</p>
-        <div className="project">
-            <h3>Maker - Socratica <a href="https://www.socratica.info/" target="_blank">⁂</a></h3>
-            
-        </div>
-        <p>An open collective of makers, artists, engineers, designers, writers, poets, and everything in-between.</p>
         <div className="project">
             <h3>President - Data Science Club</h3>
             <a href="https://uwdatascience.ca" target="_blank">
@@ -18,7 +11,7 @@ export default function Quests()
             </a>
         </div>
         
-        <p>President with an amazing team working to bring data science to as many students as possible, both the academic and 
+        <p>Lead an amazing team working to bring data science to as many students as possible, both the academic and 
             industry perspectives. One of the largest student clubs at the University of Waterloo.</p>
 
         <h3>Actor - EngPlay</h3>
