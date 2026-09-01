@@ -5,18 +5,33 @@
   --body-copy: #303747;
 }
 
+@font-face {
+  font-family: "Patrick Hand";
+  src: url("fonts/PatrickHand-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400 700;
+}
+
 * { box-sizing: border-box; }
 html { background: var(--paper); }
-body { margin: 0; color: var(--body-copy); font-family: Candara, "Segoe UI", sans-serif; }
+body { margin: 0; color: var(--body-copy); font-family: Arial, Helvetica, sans-serif; }
 a { color: var(--ink-dark); }
 
 /* Home */
-.home { min-height: 100vh; min-height: 100svh; overflow: hidden; }
+.home {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
 .manga {
   position: relative;
-  width: min(100%, 50rem, calc(100vh * .785714));
-  width: min(100%, 50rem, calc(100svh * .785714));
-  margin: 0 auto;
+  flex: 0 0 auto;
+  width: min(100%, 50rem, calc(100vh * .799667));
+  width: min(100%, 50rem, calc(100dvh * .799667));
   line-height: 0;
 }
 .manga-art { display: block; width: 100%; height: auto; pointer-events: none; user-select: none; }
@@ -24,16 +39,16 @@ a { color: var(--ink-dark); }
   position: absolute; top: 10%; left: 50%; width: 88%;
   transform: translateX(-50%) rotate(-1.5deg);
   color: var(--ink); text-align: center; line-height: 1.1;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: "Patrick Hand", cursive;
 }
 .intro h1 {
   margin: 0; font-size: clamp(1.7rem, 5vw, 3rem); font-weight: 700;
-  font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive;
+  font-family: "Patrick Hand", cursive;
   letter-spacing: .045em;
 }
 .eyebrow {
   margin: 0 0 .35rem; font-size: clamp(.7rem, 1.8vw, .95rem);
-  font-family: "Comic Sans MS", "Segoe Print", cursive;
+  font-family: "Patrick Hand", cursive;
   font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
 }
 .panel-links {
@@ -52,7 +67,7 @@ a { color: var(--ink-dark); }
 .panel-link:focus-visible { outline: .18rem dashed var(--ink-dark); outline-offset: -.45rem; }
 .panel-label {
   display: inline-block;
-  font-family: "Comic Sans MS", "Segoe Print", cursive;
+  font-family: "Patrick Hand", cursive;
   font-size: clamp(.78rem, 2.5vw, 1.2rem); font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
   text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
   transform: translateY(0); transition: transform 130ms ease;
