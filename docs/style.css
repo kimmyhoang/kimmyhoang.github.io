@@ -1,0 +1,97 @@
+:root {
+  --ink: #6895ff;
+  --ink-dark: #6895ff;
+  --paper: #fff;
+  --body-copy: #303747;
+}
+
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body { margin: 0; color: var(--body-copy); font-family: Candara, "Segoe UI", sans-serif; }
+a { color: var(--ink-dark); }
+
+/* Home */
+.home { min-height: 100vh; min-height: 100svh; overflow: hidden; }
+.manga {
+  position: relative;
+  width: min(100%, 50rem, calc(100vh * .785714));
+  width: min(100%, 50rem, calc(100svh * .785714));
+  margin: 0 auto;
+  line-height: 0;
+}
+.manga-art { display: block; width: 100%; height: auto; pointer-events: none; user-select: none; }
+.intro {
+  position: absolute; top: 10%; left: 50%; width: 88%;
+  transform: translateX(-50%) rotate(-1.5deg);
+  color: var(--ink); text-align: center; line-height: 1.1;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.intro h1 {
+  margin: 0; font-size: clamp(1.7rem, 5vw, 3rem); font-weight: 700;
+  font-family: "Ink Free", "Segoe Print", "Comic Sans MS", cursive;
+  letter-spacing: .045em;
+}
+.eyebrow {
+  margin: 0 0 .35rem; font-size: clamp(.7rem, 1.8vw, .95rem);
+  font-family: "Comic Sans MS", "Segoe Print", cursive;
+  font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+}
+.panel-links {
+  position: absolute; z-index: 1; left: 9.9%; right: 9.8%; bottom: .15%; height: 33.35%;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.15%; line-height: 1.2;
+}
+.panel-link {
+  position: relative; display: flex; align-items: flex-start; justify-content: center;
+  padding: 12% 4% 0; color: var(--ink-dark); text-decoration: none;
+  transition: background-color 130ms ease; cursor: pointer;
+}
+.panel-link:hover, .panel-link:focus-visible {
+  background: rgba(104, 149, 255, .055);
+}
+.panel-link:active { background: rgba(104, 149, 255, .12); }
+.panel-link:focus-visible { outline: .18rem dashed var(--ink-dark); outline-offset: -.45rem; }
+.panel-label {
+  display: inline-block;
+  font-family: "Comic Sans MS", "Segoe Print", cursive;
+  font-size: clamp(.78rem, 2.5vw, 1.2rem); font-weight: 700; letter-spacing: .04em; text-transform: uppercase;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+  transform: translateY(0); transition: transform 130ms ease;
+}
+.panel-link:hover .panel-label, .panel-link:focus-visible .panel-label { transform: translateY(.35rem); }
+.panel-link:active .panel-label { transform: translateY(.6rem); }
+
+/* Writing pages */
+.writing { min-height: 100vh; border-top: .45rem solid var(--ink); }
+.writing .wrap { width: min(38rem, calc(100% - 2.5rem)); margin: 0 auto; padding: 2.25rem 0 4rem; line-height: 1.62; }
+.back {
+  display: inline-block; margin-bottom: 2rem; color: var(--ink); font-weight: 700;
+  letter-spacing: .04em; text-decoration: none; transition: transform 120ms ease;
+}
+.back:hover, .back:focus-visible { transform: translateX(-.25rem); }
+.writing h1 { margin: 0 0 1rem; color: var(--ink); font-size: clamp(2rem, 8vw, 3rem); line-height: 1; }
+.writing h2 { margin: 2rem 0 .35rem; color: var(--ink-dark); font-size: 1.15rem; line-height: 1.25; }
+.writing .section-title {
+  margin-top: 3rem;
+  padding-bottom: .35rem;
+  border-bottom: .15rem solid var(--ink);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.writing p, .writing blockquote { margin: 0 0 1rem; font-size: 1.05rem; }
+.writing blockquote {
+  padding: .8rem 1rem; border-left: .22rem solid var(--ink); background: #f3f7ff;
+  color: var(--ink-dark); font-style: italic;
+}
+.contact { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; }
+.contact a { font-weight: 700; text-decoration-thickness: .1rem; text-underline-offset: .18rem; }
+
+@media (max-width: 32rem) {
+  .intro { top: 7%; }
+  .eyebrow { display: none; }
+  .panel-link { padding-top: 11%; }
+  .panel-label { letter-spacing: .02em; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .panel-link, .panel-label, .back { transition: none; }
+}
