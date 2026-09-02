@@ -148,7 +148,8 @@ a { color: var(--ink-dark); }
 
 @media (max-width: 32rem) {
   .intro { top: 7%; }
-  .eyebrow { display: none; }
+  .intro h1 { font-size: clamp(2rem, 9vw, 2.75rem); }
+  .eyebrow { display: block; font-size: clamp(.8rem, 3.5vw, 1rem); }
   .panel-label { letter-spacing: .02em; }
   .role-list li { grid-template-columns: 1fr auto; gap: .15rem .75rem; }
   .role-list .role { grid-column: 1 / -1; }
