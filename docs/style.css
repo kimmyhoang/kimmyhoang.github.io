@@ -149,7 +149,7 @@ a { color: var(--ink-dark); }
 @media (max-width: 32rem) {
   .intro { top: 7%; }
   .eyebrow { display: none; }
-  .panel-link { padding-top: 11%; }
+  .panel-link { padding-top: 6%; }
   .panel-label { letter-spacing: .02em; }
   .role-list li { grid-template-columns: 1fr auto; gap: .15rem .75rem; }
   .role-list .role { grid-column: 1 / -1; }
