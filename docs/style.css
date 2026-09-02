@@ -147,7 +147,7 @@ a { color: var(--ink-dark); }
 }
 
 @media (max-width: 32rem) {
-  .intro { top: 7%; }
+  .intro { top: 3%; }
   .intro h1 { font-size: clamp(2rem, 9vw, 2.75rem); }
   .eyebrow { display: block; font-size: clamp(.8rem, 3.5vw, 1rem); }
   .panel-label { letter-spacing: .02em; }
